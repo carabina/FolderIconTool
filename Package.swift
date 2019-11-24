@@ -18,10 +18,10 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(path: "../FoundationKit"),
-        .package(path: "../LoggerKit"),
-        .package(path: "../CommandLineKit"),
-        .package(path: "../CoreGraphicsKit")
+        .package(url: "https://github.com/pvieito/CommandLineKit.git", .branch("master")),
+        .package(url: "https://github.com/pvieito/LoggerKit.git", .branch("master")),
+        .package(url: "https://github.com/pvieito/FoundationKit.git", .branch("master")),
+        .package(url: "https://github.com/pvieito/CoreGraphicsKit.git", .branch("master"))
     ],
     targets: [
         .target(
