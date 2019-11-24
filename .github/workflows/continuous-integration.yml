@@ -17,7 +17,7 @@ jobs:
         uses: YOCKOW/Action-setup-swift@master
         with:
           swift-version: '5.1'
-      - name: Install ImageMagic
+      - name: Install ImageMagick
         run: brew install imagemagick
       - name: Test
         run: swift test --enable-test-discovery

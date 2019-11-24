@@ -13,7 +13,7 @@ $ swift run FolderIconTool -i Image.png -t Target/Directory
 ## Dependencies
 
 - Swift 5.1+
-- [ImageMagic](http://www.imagemagick.org/)
+- [ImageMagick](http://www.imagemagick.org/)
 
 ## Note
 
