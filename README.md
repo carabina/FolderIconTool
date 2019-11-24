@@ -17,4 +17,4 @@ $ swift run FolderIconTool -i Image.png -t Target/Directory
 
 ## Note
 
-`FolderIconTool` is heavily inspired by [`folderify` by Lucas Garron](https://github.com/lgarron/folderify).
+- `FolderIconTool` is heavily inspired by [`folderify` by Lucas Garron](https://github.com/lgarron/folderify).
