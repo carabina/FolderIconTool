@@ -28,7 +28,7 @@ public struct FolderIcon {
 }
 
 extension FolderIcon {
-    private func renderTemplateImageURL() throws -> URL {
+    internal static func renderTemplateImageURL() throws -> URL {
         let temporaryDirectory = FileManager.default.temporaryDirectory
             .resolvingSymlinksInPath()
         let templateImage = NSWorkspace.shared.icon(forFile: temporaryDirectory.path)
@@ -42,7 +42,7 @@ extension FolderIcon {
     }
     
     public func render() throws -> URL {
-        let templateImageURL = try renderTemplateImageURL()
+        let templateImageURL = try FolderIcon.renderTemplateImageURL()
         let temporaryOutputURL: URL
         
         if let inputMaskImageURL = maskImageURL {

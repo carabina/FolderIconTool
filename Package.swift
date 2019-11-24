@@ -33,6 +33,10 @@ let package = Package(
             name: "FolderIconKit",
             dependencies: ["FoundationKit", "CoreGraphicsKit"],
             path: "FolderIconKit"
+        ),
+        .testTarget(
+            name: "FolderIconKitTests",
+            dependencies: ["FoundationKit", "FolderIconKit"]
         )
     ]
 )
